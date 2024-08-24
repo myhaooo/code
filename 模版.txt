@@ -1,0 +1,56 @@
+#ifndef LOCAL
+    #define NDEBUG
+    	cin.tie(0), cout.tie(0);
+    #define file(a)                               \
+    	FILE *FI = freopen(#a ".in", "r", stdin); \
+    	FI = freopen(#a ".out", "w", stdout)
+    	// file();
+    #else
+    #ifdef LEN
+    	fprintf(stderr, "你的code声明了 %.3lf MB 的空间\n", abs(&be - &ed) / 1048576.0);
+    #endif
+    	freopen("in.in", "r", stdin);
+    	freopen("out.out", "w", stdout);
+    	// #include "../local.h"
+    #endif
+
+
+
+#include<bits/stdc++.h>
+using namespace std;
+#define clear(a) memset(a, 0, sizeof(a))
+#define ll long long
+#define ull unsigned long long
+
+bool be;
+
+
+
+bool ed;
+
+signed main(){
+    ios::sync_with_stdio(false);
+    #ifndef LOCAL
+        #define NDEBUG
+        cin.tie(0),cout.tie(0);
+    #else
+        fprintf(stderr, "你的code使用了 %.3lf MB 的空间\n", abs(&be - &ed) / 1048576.0);
+        freopen("in.in","r",stdin);
+        freopen("out.out","w",stdout);
+        //#include "../local.h"
+    #endif
+
+
+}
+
+#ifdef _WIN32
+    #define getchar() _getchar_nolock()
+    #define getchar   _getchar_nolock
+    #define putchar() _putchar_nolock()
+    #define putchar   _putchar_nolock
+#else
+    #define getchar   getchar_unlocked
+    #define getchar() getchar_unlocked()
+    #define putchar   putchar_unlocked
+    #define putchar() putchar_unlocked()
+#endif
