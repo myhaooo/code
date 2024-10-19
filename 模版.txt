@@ -1,4 +1,5 @@
-#ifndef LOCAL
+ios::sync_with_stdio(false);
+    #ifndef LOCAL
     #define NDEBUG
     	cin.tie(0), cout.tie(0);
     #define file(a)                               \
